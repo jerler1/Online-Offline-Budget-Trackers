@@ -59,7 +59,7 @@
     <script src="db.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
-        window.addEventListerner("load", () => {
+        window.addEventListener("load", () => {
           navigator.serviceWorker.register("service-worker.js").then((reg) => {
             console.log("We found your service worker file!", reg);
           });
